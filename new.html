@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>homepage</title>
+  </head>
+<style>
+    
+.carousel-inner .carousel-item{
+	height: 100vh !important;
+}
+.banner{
+	height: 100vh;
+	background-position: center;
+    
+}
+.main-menu-logo{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+	background: #c6c2d84f;
+}
+.navbar-brand{
+	font-size: 30px;
+	font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	color: rgba(61, 60, 63, 0.76)!important;
+}
+.nav-item a{
+
+	display: block;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0px 20px !important;
+	color: rgba(66, 63, 63, 0.733) !important;
+}
+.nav-item a:hover{
+
+    
+	color: #000 !important;
+}
+
+.carousel-caption{
+	bottom: 40%;
+	display: block !important;
+}
+
+.carousel-caption h2{
+	font-size: 80px;
+	letter-spacing: 2px;
+	color: rgb(142, 141, 145);
+  text-shadow: rgba(0, 0, 0, 0.685);
+}
+.carousel-caption h3{
+	font-size: 60px;
+	letter-spacing: 2px;
+	color:  #111111a4;
+  text-shadow: rgba(0, 0, 0, 0.733);
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .carousel-caption{
+    bottom: 30%;
+    display: block !important;
+  }
+  
+  
+}
+
+</style>
+   
+    
+    
+    <body>
+    
+    
+    
+       <header>
+<!-- log and nav area -->
+    <div class="main-menu-logo bg-none ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+            <div class="img"  >
+
+                 <img src="online-library.png" width="6%" style="filter: opacity(60%); border-radius: 0px;text-align: left;">
+
+                
+              <a class="navbar-brand" href="#">Online Book Store</a></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+
+                  <li class="nav-item active">
+                    <a href="new.html"  class="fa fa-home" ></a>
+                  </li>
+                  
+                  <li class="nav-item ">
+                    <a href="new2.html"class="fa fa-catagory" >Catagory</a>
+                  </li>
+                 
+
+                  <li class="nav-item ">
+                    <a href="#" ><a class="fa fa-about"   data-toggle="modal" data-target="#about-modal">About</span></a>
+                  </li>
+
+                <li class="nav-item ">
+                    <a href="#" ><a class="fa fa-contact"  data-toggle="modal" data-target="#contact-modal">Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </div>
+<!-- slider area -->
+
+
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="false">
+            
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+            
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="banner" style="background-image: url('1st.jpg'); background-repeat: no-repeat;"></div>
+              <div class="carousel-caption d-none d-md-block">
+                 
+                 <h2 class="text">Get your books here</h2>
+                 <h3 class="text">Read book you like</h3>
+               </div>
+            </div>
+            
+
+            <div class="carousel-item ">
+              <div class="banner" style="background-image: url('2nd.jpg'); background-repeat: no-repeat;"></div>
+              <div class="carousel-caption d-none d-md-block">
+                 
+                <h2 class="">Also get latest books here</h2>
+                <h3 class="">Make books your Friend</h3>
+              </div>
+            </div>
+
+
+            <div class="carousel-item ">
+              <div class="banner" style="background-image: url('3rd.jpg'); background-repeat: no-repeat;"></div>
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="">Get more interesting books</h2>
+                <h3 class="">Explore more and have fun</h3>
+               </div>
+            </div>
+           
+
+            
+
+          </div>
+
+          
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+   </header>
+    
+    
+    
+    
+
+  <!-- About Modal -->
+  <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="start.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5>we provide all types of book here. One can get their desired book very easily.  </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- contact modal -->
+
+
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SEND EMAIL <small><p class="text-info">abc.webdev@gmail.com</p></small></h5>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" name="name" class="form-control rounded-0 mb-2" placeholder="Name">
+            <input type="email" name="email" class="form-control rounded-0 mb-2" placeholder="Email">
+            <textarea name="message" id="" cols="30" rows="4" class="form-control rounded-0 mb-2">Message</textarea>
+            <input type="submit" name="submit" class="form-control rounded-0 mb-2 bg-info text-light" value="SEND">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Georgia,Georgia, 'Times New Roman', Times, serif;
+  color: #333333;
+    }
+    .banner{
+	height: 100vh;
+	background-position: center;
+  
+}
+.main-menu-logo{
+	position: fixed;
+	top:0;
+	z-index: 100;
+	width: 100%;
+	background: #b2b2b64f;
+}
+.navbar-brand{
+	font-size: 30px;
+	font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	color: rgba(60, 58, 63, 0.795)!important;
+}
+.nav-item a{
+	display: block;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 0px 20px !important;
+	color: rgba(66, 63, 63, 0.733) !important;
+}
+.nav-item a:hover{
+	color: #000 !important;
+}
+
+
+        .welcomecolor {
+            color: rgba(225, 230, 223, 0.596);
+            
+            font-size: 40px;
+            font-weight:  bold; 
+            text-align: center;
+            
+        }
+         .home-content{
+  position: relative;
+  padding-top: 0px;
+}
+.home-content .overview-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  margin-bottom: 26px;
+}
+.overview-boxes .box{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: calc(100% / 4 - 15px);
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.overview-boxes .box-topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+        .home-content .box .number{
+  display: inline-block;
+  font-size: 35px;
+  margin-top: -6px;
+  font-weight: 500;
+}
+.home-content .box .img{
+  display: flex;
+  align-items: center;
+}
+.home-content .box .img i{
+  height: 30px;
+  width: 30px;
+  background: #8FDACB;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 0%;
+  color: rgb(253, 254, 255);
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.home-content .box .img .text{
+  font-size: 10px;
+}
+
+.home-content .total-order{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ .box .button{
+  width: 100%;
+  display: flex;
+ justify-content: flex-end;
+  
+}
+ .box .button a{
+  color: #fff;
+  background: #8bc0d8;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+ .box .button a:hover{
+  background:  #f1f3f8;
+}
+
+    </style>
+<body>
+    <div class="main-menu-logo bg-none ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+            <div class="icon"  >
+
+                 <img src="online-library.png" width="6%" style="filter: opacity(60%); border-radius: 0px;text-align: left;">
+
+                
+              <a class="navbar-brand" href="#">Online Book Store</a></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+
+                  <li class="nav-item active">
+                    <a href="new.html" class="fa fa-home" ></span></a>
+                  </li>
+                  
+                  <li class="nav-item ">
+                    <a href="new2.html" class="fa fa-catagory" >Catagory</span></a>
+                  </li>
+
+                  <li class="nav-item ">
+                    <a href="#" ><a class="fa fa-about"   data-toggle="modal" data-target="#about-modal">About</span></a>
+                  </li>
+
+                <li class="nav-item ">
+                    <a href="#" ><a class="fa fa-contact"  data-toggle="modal" data-target="#contact-modal">Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    </div>
+               
+
+             <!-- About Modal -->
+  <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="start.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5>we provide all types of book here. One can get their desired book very easily.  </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- contact modal -->
+
+  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SEND EMAIL <small><p class="text-info">abc.webdev@gmail.com</p></small></h5>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" name="name" class="form-control rounded-0 mb-2" placeholder="Name">
+            <input type="email" name="email" class="form-control rounded-0 mb-2" placeholder="Email">
+            <textarea name="message" id="" cols="30" rows="4" class="form-control rounded-0 mb-2">Message</textarea>
+            <input type="submit" name="submit" class="form-control rounded-0 mb-2 bg-info text-light" value="SEND">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            
+<br><br><br>
+
+                <div class="welcomecolor"><em>Education & General Knowledge</em></div>
+            <hr> 
+            <section class="home-section">
+              <div class="home-content">
+                  <div class="overview-boxes">
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">Everyday Vocabulary More Than 6100 Words</div>
+                        <div class="details">By Kumkum Gupta (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button">
+                         <a class="select" data-toggle="modal" data-target="#select-modal">Select</a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">14000 + Objective Questions-General Studies</div>
+                        <div class="details">By Manohar Pandey (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal2">Select</a>
+                         
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">Olympiad Champs General Knowledge</div>
+                        <div class="details">By Disha Experts (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal3">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  
+                  <div class="overview-boxes">
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">Synonyms and Antonyms Anglo </div>
+                        <div class="details">By Roshan Tolani (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal4">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">The IDIOMS and PHRASES Anglo </div>
+                        <div class="details">By Roshan Tolani (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal5">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">Power of Your Subconscious Mind</div>
+                        <div class="details">By Joseph Murphy (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal6">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="overview-boxes">
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">The Essentials of Education Psychology</div>
+                        <div class="details">By Dr.S.K Mangal(Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal7">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">The Essentials of Educational Technology</div>
+                        <div class="details">By Mangak SK(Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal8">Select</a>
+                         
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div class="img">
+                        <i class='bx bx-book'></i>
+                      <div class="right-side">
+                        <div class="box-topic">The Assessment for Learning - General Knowledge</div>
+                        <div class="details">By by Mangal S. K (Author)</div>
+                        <div class="details">Price: 200</div>
+                      
+                        <div class="button"><a class="select" data-toggle="modal" data-target="#select-modal9">Select</a>
+                          
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                    
+                  </div>
+                </div>
+                  
+                
+                <!-- select Modal -->
+  <div class="modal fade" id="select-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">Important Note: This book is for hindi language speakers,
+                 who want to learn equivalent English words for Hindi words used in daily vocabulary
+                  Everyday Vocabulary by Arihant book has been designed with an aim of helping the students improve their vocabulary, 
+                  as good vocabulary strengthens the writing and speaking skills.
+                 The present book contains more than 6100 such words that are used in day-to-day life for conversation. 
+                 The book provides an easy approach to pronunciation and meanings of frequently used English words.
+                  The book covers English Alphabet and Ordinals, Numerals, Words Used in Daily Routine, Name of Parts of the Body, 
+                  Name of Relations, Name of Ornaments and Jewels, Name of Animals, Name of Birds, Name of Some Reptiles, Water Living Creatures, 
+                  Worms and Insects, Domestic Articles, Homes and Abodes, Name of Musical Instruments, Name of Minerals, Young Ones of Animals and Birds, 
+                  Cries of Creatures, Clothes, Dresses, Wearing Apparels, Terms Used in Sports and Games, Names of Directions, Names of Planets in our Solar System,
+                   Name of Colors, Name of Medical Sciences and Medicines, Terms Used in Post and Telegraph Department, etc.
+                
+                This book will help in improving your writing and speaking skills.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- select Modal2-->
+  <div class="modal fade" id="select-modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">The book contains the collection of over 14000 questions covering General Studies.The History section covers ancient, 
+                medieval and modern history whereas the Geography section covers world geography, Indian geography and environment & ecology.
+             The General Science section covers Physics, Chemistry, Biology and Science & Technology. The questions covered in the book contain answers side by side to
+              help aspirants evaluate themselves after attempting a certain number of questions. Also the questions asked in recent years? General Studies examinations have
+               been provided in the book with authentic and detailed solutions to help aspirants get an insight into the recent examination pattern and the types of questions 
+               asked therein. Each chapter in the book contains a variety of questions according to the latest pattern Assertion-Reason, Matching, Multi-Statements,Arrangements, 
+               Pairing, etc.
+                 Also more than 500 questions based on Current Affairs have been provided in the book to give an additional advantage to the aspirants.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- select Modal3 -->
+  <div class="modal fade" id="select-modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">“Olympiad Champs General Knowledge ” is a complete preparatory book not only for Olympiad Exams but also for General Awareness of Class 6 student.
+                The book provides complete theory with Illustrations (real-life Images) along with fully solved Exercises in 2 levels.
+                Level 1, is the beginner’s level which comprises of MCQs like fillers, analogy and odd one out.
+                Level 2 (advanced level) comprises of questions based on techniques like matching, chronological sequencing, picture, feature based, statement correct/ incorrect, integer based, puzzle, grid based and much more.
+                the Exercises have been empowered with Past Questions from various Olympiad Exams like NCO, GTSE, etc.
+                The book also provides Current Affairs chapters, which contains MCQs, so as to keep the students updated with the latest happenings in our surroundings.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- select Modal4 -->
+  <div class="modal fade" id="select-modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">Authoritative, accessible and completely up to date, The Synonyms and
+                Antonyms is an invaluable guide for anyone wanting to build their
+                vocabulary and improve their writing skills. Synonyms or the phrases with
+                nearly similar meanings and, Antonyms or the words with opposite
+                meanings are the crucial part of English preparation for most of the
+                competitive exams.
+                Over 18,000 alternative and opposite words are given with the closest,
+                arranged in alphabetical order for easy reference. In addition, more than
+                1000 Exercise Questions and Actual Exam Questions have been given.
+                Finally, the book ends with Previous Years’ Questions of up to 2014 based
+                on Type A and Type B of Synonyms and Antonyms.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- select Modal5 -->
+  <div class="modal fade" id="select-modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">This book presents and practices over 2000 of the most useful and
+                frequent idioms in typical contexts which are used in all forms of language
+                be it informal and formal, spoken and written. Understanding and
+                appropriate use of idioms and phrases greatly enhances the learner's
+                language skills.
+                The completely revised and updated edition of this reference and practice
+                book looks at the most colourful and fun area of vocabulary ? Idioms and
+                Phrases. This book will appeal to students from intermediate level and the
+                aspirants of various National and International Competitive and Recruitment
+                Examinations, as well who want to understand the English really used by
+                native speakers. Over 2,000 of the most useful and frequent idioms which
+                learners are likely to encounter are presented and practiced in typical
+                contexts, so that learners using this book will have hundreds of idioms 'at
+                their fingertips'.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- select Modal6 -->
+  <div class="modal fade" id="select-modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">This remarkable book by Dr. Joseph Murphy, one of the pioneering voices of affirmative thinking,
+                 will unlock for you the truly staggering powers of your subconscious mind.
+                 Combining time-honored spiritual wisdom with cutting edge scientific research, Dr. Murphy explains how the subconscious mind
+                  influences every single thing that you do and how, by understanding it and learning to control its incredible force, you can improve 
+                  the quality of your daily life.
+
+                Everything, from the promotion that you wanted and the raise you think you deserve, to overcoming phobias and bad habits and 
+                strengthening interpersonal relationships, the Power of Your Subconscious Mind will open a world of happiness, success, prosperity and peace for you.
+                 It will change your life and your world by changing your beliefs.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- select Modal7 -->
+  <div class="modal fade" id="select-modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">A harmonious blend of the theoretical and practical aspects of educational psychology, 
+                this student-friendly text provides a base for the understanding of the subject. The book discusses the various
+                 aspects of growth and development, specifically during childhood and adolescence, and accords due importance to
+                  the cognitive aspect of human behaviour with elaborate text on intelligence, creativity, thinking, reasoning and
+                   problem-solving.Besides maintaining a logical progression of topics, the author has interspersed the text with 
+                   examples and illustrations to provide an in-depth analysis of the subject matter. The book is ideally suited for
+                    the B.Ed. and B.A. (Education) courses but can also be a valuable reference for teachers, teacher-trainees, and
+                     practising counsellors at various levels of school education. It features: cogent and coherent style of writing; 
+                     assignment problems and sample tests at the end of various chapters; and, wide range of examples and over 50
+                      illustrations to support and explain the topics discussed.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- select Modal8 -->
+  <div class="modal fade" id="select-modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">Use of technology has permeated all areas of knowledge, and Education is no exception.
+                 This accessible and easy-to-read book, emanating from an author who has distinguished himself as teacher and able
+                  administrator of education, and devised several educational and psychological tests, encompasses a broad spectrum
+                   of areas in educational technology. It focuses on the modern trends and innovations in Educational Technology to
+                    equip the teacher trainees and in-service teachers with the necessary skills in this area. The book not only covers 
+                    the objectives, concepts, use and management of Educational Technology, it also emphasises the role of education and 
+                    various other techniques that help in teaching-learning. KEY FEATURES ? The coverage is quite comprehensive and elaborate
+                     catering to the needs of the students of most Indian universities. ? The concepts given are illustrated with plenty of 
+                     tables, figures, and examples to make the reader comprehend the subject better. 
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- select Modal9 -->
+  <div class="modal fade" id="select-modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Online Book Store</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <img src="online-library.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8 text-info">
+              <h5 style="color: #000;">The book is a rich source of information relevant to the field of assessment and learning. It describes various techniques 
+                and methods for evaluating the potential, ability, interest and attitude of learners for understanding the ways to further build up the pyramid of 
+                their learning.
+                it covers exhaustive information inclusive of that required for the compulsory Paper “assessment for learning” introduced in the curriculum of B.Ed.
+                 Course of various Indian universities in accordance with the guidelines of National Council for teacher education (NCTE).
+                It discusses revised Bloom's Taxonomy of instructional objectives, the construction and standardization of achievement and diagnostic tests, 
+                policy perspective on examination and assessment, latest assessment tools and devices such as portfolio assessment. Besides, it describes the 
+                development and use of rubrics, emerging trends and assessment practices such as computer-based online examination, examination on demand,
+                 open-book examination and Choice-Based credit system and statistical means and ways of analyzing and interpreting students' Performances.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info rounded-0 " data-dismiss="modal" style="color: #ebeff1;">Done</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+    body {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Georgia,Georgia, 'Times New Roman', Times, serif;
+  color: #333333;
+}
+
+.box-form {
+  margin: 0 auto;
+  width: 90%;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 90%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+@media (max-width: 980px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+  }
+}
+.box-form div {
+ height: auto;
+}
+.box-form .left {
+  color: #b7adbdd3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url(giphy.gif);
+  background-position: center;
+}
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #5961f9ad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.box-form .left .overlay h1 {
+  font-size: 8vmax;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.box-form .left .overlay span p {
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+.box-form .right {
+  padding: 40px;
+  height: 20%;
+  
+}
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
+  }
+}
+.box-form .right h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: 6.5vmax;
+  line-height: 0;
+  color: rgba(104, 106, 212, 0.61);
+}
+.box-form .right p {
+  font-size: 14px;
+  color: #B0B3B9;
+}
+.box-form .right .inputs {
+  overflow: hidden;
+}
+.box-form .right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #B0B3B9;
+}
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+.box-form .right button {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 20px 0px #49c628a6;
+  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+}
+
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+
+label::before {
+  content: ' \f00c';
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid #70F570;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+
+label:hover::before {
+  font-family: FontAwesome;
+  content: ' \f00c';
+  color: #fff;
+  cursor: pointer;
+  background: #70F570;
+}
+
+label:hover::before .text-checkbox {
+  background: #70F570;
+}
+
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 10s linear;
+}
+
+label input[type="checkbox"] {
+  display: none;
+}
+</style>
+<body>
+    <div class="box-form">
+        <div class="left">
+          <div class="overlay">
+            <h1>Online Book Store</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur et est sed felis aliquet sollicitudin</p>
+              
+          </div>
+            
+        </div>
+            <div class="right">
+            <h4> Register </h4>
+            
+           
+              <form name="reg" class="inputs" onsubmit="return form_validation()">
+                <input type="text" placeholder="Username" name="Name" size="30" required>
+                <br>
+                <input type="password" placeholder="Create Password" name="password" size="8" required>
+                <br>
+                <input type="number" placeholder="Phone number"name="number" size="10" required>
+                <br>
+                <input type="text" placeholder="Email" name="email" size="50" required>
+                <br>
+                <input type="text" placeholder="Address" name="address" size="100" required>
+                
+           
+                
+               
+                
+           
+            <div class="remember-me--forget-password">
+              <br><br><br>
+           <label>
+            <input type="checkbox" checked="checked" name="checkbox" style="margin-bottom:15px">
+            <span class="text-checkbox"> I accept all the terms and conditions applied here.<a href="#">Terms & Privacy</a></span>
+        </label>
+  
+      </div>
+    
+          
+          <a href ="login.html"> <button>Submit</button></a> 
+          <p>Already have a account. <a href="login.html">Login</a> </p>
+        </form>
+       
+      </div>
+    </div>
+    <script>
+      function form_validation()
+      {
+        const name= document.getElementById("name");
+        const password= document.getElementById("password");
+        const phone_number= document.getElementById("number") ;
+        const email= document.getElementById("email");
+        const address= document.getElementById("address");
+        
+        if (username.value.length < 2 || username.value.length > 20){
+          window.aleart("please enter your name")
+          username.focus();
+          return false;
+        }
+        if (password.value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/)){
+          window.aleart("please enter your password")
+          password.focus();
+          return false;
+        }
+        if (number.value.match(/^[1-9][0-9]{9}$/)){
+          window.aleart("please enter your number")
+          number.focus();
+          return false;
+        }
+        if (email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)){
+          window.aleart("please enter a valid e-mail!")
+          email.focus();
+          return false;
+        }
+        if (address.value.length < 2 || username.value.length > 100){
+          window.aleart("please enter your address")
+          address.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+</body>
+</html>
